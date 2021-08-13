@@ -12,7 +12,7 @@
 
 ### Languages
 
-<img align="left" width="50px" src="images/R.png" /> ![](/imagesR.png)
+<img align="left" width="100px" src="images/R.png" /> ![](/imagesR.png)
 [<img align="left" width="26px" src="images/python.svg" />] ![](/mages/R.png)
 [<img align="left" width="26px" src="images/Bash.png" />]
 [<img align="left" width="26px" src="images/SQL.png" />]

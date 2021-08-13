@@ -12,7 +12,7 @@
 
 ### Languages and Tools:
 
-[<img align="left" alt="R" width="26px" src="/images/R.png" />]
+[<img align="left" alt="R" width="26px" src=/images/R.png />]
 [<img align="left" alt="Python" width="26px" src="" />]
 [<img align="left" alt="Bash" width="26px" src="" />]
 [<img align="left" alt="SQL" width="26px" src="" />]

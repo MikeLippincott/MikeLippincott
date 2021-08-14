@@ -12,18 +12,14 @@
 
 ### Languages
 
-<img align="left" width="100px" src="Images/R.png" /> ![](/imagesR.png)
-[<img align="left" width="26px" src="images/python.svg" />] ![](/mages/R.png)
-[<img align="left" width="26px" src="images/Bash.png" />]
-[<img align="left" width="26px" src="images/SQL.png" />]
-[<img align="left" width="26px" src="Excel.png" />]
-[<img align="left" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/FIJI_%28software%29_Logo.svg/1200px-FIJI_%28software%29_Logo.svg.png" />]
-[<img align="left"  width="26px" src="images/HTML.png" />]
-[<img align="left" width="26px" src="Images/github.svg" />]
+[<img align="left" width="50px" src="Images/R.png" />]
+[<img align="left" width="50px" src="Images/python.svg" />]
+[<img align="left" width="50px" src="Images/Bash.png" />]
+[<img align="left" width="50px" src="Images/SQL.png" />]
+[<img align="left" width="50px" src="Images/Excel.png" />]
+[<img align="left" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/FIJI_%28software%29_Logo.svg/1200px-FIJI_%28software%29_Logo.svg.png" />]
+[<img align="left" width="50px" src="Images/HTML.png" />]
+[<img align="left" width="50px" src="Images/github.svg" />]
 
-![](/Images/R.png)
 
-<br />
-<br />
-<br />
 <br />

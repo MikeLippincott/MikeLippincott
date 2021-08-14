@@ -1,4 +1,5 @@
-### Mike Lippincott
+# Mike Lippincott
+###  
 - Molecular Biologist
 - Bioinformatician
 - Certified Nerd Extraordinaire

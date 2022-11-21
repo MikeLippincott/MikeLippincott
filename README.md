@@ -18,5 +18,3 @@
 <img align="left" width="50px" src="Images/710590.png" />
 <img align="left" width="50px" src="Images/HTML.png" />
 <img align="left" width="50px" src="Images/SQL.png" />
-<img align="left" width="50px" src="Images/Excel.png" />
-<img align="left" width="50px" src="Images/1200px-PyMOL_logo.svg.png" />

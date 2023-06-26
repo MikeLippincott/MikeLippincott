@@ -1,9 +1,6 @@
 # Mike Lippincott
 ###  
-### PhD Student in Stem Cell Biology at the University of Colorado Anschutz Medical Campus
-- Cellular Molecular Biologist
-- Bioinformatician
-- Certified Nerd Extraordinaire
+### PhD Student in the Cell Biology, Stem Cells, and Development program at the University of Colorado Anschutz Medical Campus
 
 ### Connect with me:
 

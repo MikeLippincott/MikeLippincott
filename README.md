@@ -4,9 +4,9 @@
 
 ### Connect with me:
 
-<img align="left" alt="codeSTACKr | Twitter" width="22px" src="Images/brand-download-img-1.jpg.twimg.1920.jpg" /> [Twitter](https://twitter.com/mike_lippincott)  
+<img align="left" alt="codeSTACKr | Twitter" width="22px" src="Images/twitter-logo-vector-png-clipart-1.png" /> [Twitter](https://twitter.com/mike_lippincott)  
 
-<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"/> [LinkedIn](https://www.linkedin.com/in/mlippincott/)  
+<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="Images/LinkedIn_logo_initials.png"/> [LinkedIn](https://www.linkedin.com/in/mlippincott/)  
 
 
 ### Primarily Uses

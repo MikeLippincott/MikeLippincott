@@ -1,6 +1,7 @@
 # Mike Lippincott
-###  
-### PhD Student in the Cell Biology, Stem Cells, and Development program at the University of Colorado Anschutz Medical Campus
+###
+### PhD Student in the Cell Biology, Stem Cells, and Development Program    
+### at the University of Colorado Anschutz Medical Campus
 
 ### Connect with me:
 
@@ -13,8 +14,11 @@
 <img align="left" width="50px" src="Images/python.svg" />
 <img align="left" width="50px" src="Images/Bash.png" />
 <img align="left" width="50px" src="Images/R.png" />
-<img align="left" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/FIJI_%28software%29_Logo.svg/1200px-FIJI_%28software%29_Logo.svg.png" />    
-<img align="left" width="50px" src="Images/710590.png" />
-<img align="left" width="50px" src="Images/Git-Icon-1788C.png" />
-<img align="left" width="50px" src="Images/HTML.png" />
+<img align="left" width="50px" src="Images/710590.png" />      
+
+<br/><br/>
+    
+### Secondarily Uses
+<img align="left" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/FIJI_%28software%29_Logo.svg/1200px-FIJI_%28software%29_Logo.svg.png" />  
 <img align="left" width="50px" src="Images/SQL.png" />
+<img align="left" width="50px" src="Images/HTML.png" />

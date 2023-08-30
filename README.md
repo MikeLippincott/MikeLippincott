@@ -3,6 +3,8 @@
 ### PhD Student in the Cell Biology, Stem Cells, and Development Program    
 ### at the University of Colorado Anschutz Medical Campus
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=MikeLippincott&show_icons=true&theme=radical)
+
 ### Connect with me:
 
 <img align="left" alt="codeSTACKr | Twitter" width="22px" src="Images/twitter-logo-vector-png-clipart-1.png" /> [Twitter](https://twitter.com/mike_lippincott)  

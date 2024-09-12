@@ -3,7 +3,7 @@
 ### PhD Candidate in the Cell Biology, Stem Cells, and Development Program    
 ### at the University of Colorado Anschutz Medical Campus
 
-![Mikes's GitHub stats](https://github-readme-stats.vercel.app/api?username=MikeLippincott&show_icons=true&theme=radical)
+# [See more about my work](https://mikelippincott.github.io/)
 
 ### Connect with me:
 
@@ -23,4 +23,9 @@
 ### Secondarily Uses
 <img align="left" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/FIJI_%28software%29_Logo.svg/1200px-FIJI_%28software%29_Logo.svg.png" />  
 <img align="left" width="50px" src="Images/SQL.png" />
-<img align="left" width="50px" src="Images/HTML.png" />
+<img align="left" width="50px" src="Images/HTML.png" />    
+
+<br/><br/>
+
+ 
+[Mikes's GitHub stats](https://github-readme-stats.vercel.app/api?username=MikeLippincott&show_icons=true&theme=radical)

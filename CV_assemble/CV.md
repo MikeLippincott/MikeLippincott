@@ -108,19 +108,19 @@
       {PhD Research - Computational Cell Biology}{Oct 2022 - Present}
       {Advisor: Gregory P. Way, PhD, University of Colorado}{Aurora, CO}
     \resumeSubheading
-      {Research Assistant - Genomics}{2021 - 2022}
+      {Post-baccalaureate Research Assistant - Genomics}{2021 - 2022}
       {Advisor: Shawn Ahmed, University of North Carolina at Chapel Hill}{Chapel Hill, NC}
     \resumeSubheading
       {Research Assistant - Genome editing}{2020 – 2021}
       {Centro de Technologia Canavieria}{Saint Louis, MO}
     \resumeSubheading
-      {Research Assistant - Quantitative spectroscopy}{2019 – 2020}
+      {Undergraduate Research Assistant - Quantitative spectroscopy}{2019 – 2020}
       {Advisor: Thomas Spudich, PhD, Maryville University of Saint Louis}{Saint Louis, MO}
     \resumeSubheading
-      {Research Assistant - Cell Biology}{2018 – 2021}
+      {Undergraduate Research Assistant - Cell Biology}{2018 – 2021}
       {Advisor: Stacy L. Donovan, PhD, Maryville University of Saint Louis}{Saint Louis, MO}
     \resumeSubheading
-      {Research Intern - Biochemistry}{2018 – 2019}
+      {Research Internship - Biochemistry}{2018 – 2019}
       {Elemental Enzymes}{Saint Louis, MO}
   \resumeSubHeadingListEnd
 

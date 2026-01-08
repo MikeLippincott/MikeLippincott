@@ -206,6 +206,9 @@
         {Neurofibromatosis Young Investigator's Forum Travel Award}{2025}
         {Neurofibromatosis Young Investigator's Forum}{Baltimore, MD}
     \resumeSubheading
+        {SBI2 Travel Award, Yokogawa Electric Corporation, SBI2, Boston, MA}{2025}
+        {Society for Biomolecular Imaging and Informatics}{Boston, MA}
+    \resumeSubheading
         {Best Oral Presentation}{2021}
         {Maryville University Research Conference}{Saint Louis, MO}
     \resumeSubheading

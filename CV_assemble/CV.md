@@ -30,6 +30,7 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+\setlength{\footskip}{6pt}
 
 \urlstyle{same}
 
@@ -105,7 +106,7 @@
 \section{Research Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {PhD Research - Computational Cell Biology}{Oct 2022 - Present}
+      {PhD Research - Computational Cell Biology}{Aug. 2022 - Present}
       {Advisor: Gregory P. Way, PhD, University of Colorado}{Aurora, CO}
     \resumeSubheading
       {Post-baccalaureate Research Assistant - Genomics}{2021 - 2022}
@@ -155,7 +156,6 @@
     \resumeSubheading
         {Biology and Maths Tutor}{2017 – 2019}
         {Maryville University of Saint Louis}{Saint Louis, MO}
-        
   \resumeSubHeadingListEnd
 
 %-----------Presentations and Invited Lectures-----------------
@@ -275,7 +275,7 @@
     \href{https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en}{https://scholar.google.com/citations?user=mTdpDrwAAAAJ\&hl=en}
     \begin{enumerate}[label=\arabic*, start=9, before=\let\originalitem\item\renewcommand{\item}{\addtocounter{enumi}{-2}\originalitem}]
     \item {\textbf{Michael J. Lippincott}, Jenna Tomkinson, Ibrahim Bilem, Mahomi Suzuki, Akiko Nakde, Toshiaki Endou, Simon Mathien, Felix Lavoie-Perusse, Carla Basualto-Alarcón, Gregory P Way. (2025)
-    High-content live-cell time-lapse imaging predicts cells about to die via apoptosis. In Review at Cell Systems Methods. bioRxiv: https://doi.org/10.1101/2025.10.23.684203 
+    High-content live-cell time-lapse imaging predicts cells about to die via apoptosis. In Review at Cell Reports Methods. bioRxiv: https://doi.org/10.1101/2025.10.23.684203 
     }
     \item {Dave Bunten, Jenna Tomkinson, Erik Serrano, \textbf{Michael J. Lippincott}, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way (2025)
     Scalable data harmonization for single-cell image-based profiling with CytoTable. In Review at Patterns. bioRxiv: https://doi.org/10.1101/2025.06.19.660613 
@@ -291,7 +291,7 @@
     \item {Lister-Shimauchi EH, McCarthy B, \textbf{Michael J. Lippincott}, Ahmed S. (2022) Genetic and Epigenetic Inheritance at Telomeres. Epigenomes: https://doi.org/10.3390/epigenomes6010009
     }
 
-    \end{etaremune}
+    \end{enumerate}
 
 %-------------------------------------------
 \end{document}

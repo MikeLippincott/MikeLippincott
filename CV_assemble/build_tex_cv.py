@@ -147,6 +147,18 @@ def escape_latex(text: str) -> str:
     return "".join(out)
 
 
+def bold_own_name_in_authors(authors: str) -> str:
+    rendered = escape_latex(str(authors))
+    name_variants = [
+        "Michael J. Lippincott",
+        "Michael J Lippincott",
+    ]
+    for name in name_variants:
+        escaped_name = escape_latex(name)
+        rendered = rendered.replace(escaped_name, rf"\textbf{{{escaped_name}}}")
+    return rendered
+
+
 def timeline(item: dict) -> str:
     start = item.get("start")
     end = item.get("end")
@@ -358,7 +370,7 @@ def render_publications(publications: dict) -> list[str]:
     )
 
     for p in items:
-        authors = escape_latex(str(p.get("authors", "")))
+        authors = bold_own_name_in_authors(str(p.get("authors", "")))
         year = escape_latex(str(p.get("year", "")))
         title = escape_latex(str(p.get("title", "")))
         status = escape_latex(str(p.get("status", "")))

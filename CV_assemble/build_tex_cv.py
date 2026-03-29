@@ -206,9 +206,21 @@ def render_generic_subheading_section(
     ]
 
     for item in items:
-        left = first_present(
-            item,
-            [
+        # For presentation entries, omit the talk title and lead with the format
+        # (invited/oral/poster) plus event details.
+        if section_name == "presentations":
+            left_keys = [
+                "type",
+                "event",
+                "role",
+                "name",
+                "degree",
+                "outlet",
+                "authors",
+                "label",
+            ]
+        else:
+            left_keys = [
                 "title",
                 "role",
                 "name",
@@ -218,8 +230,9 @@ def render_generic_subheading_section(
                 "outlet",
                 "authors",
                 "label",
-            ],
-        )
+            ]
+
+        left = first_present(item, left_keys)
         when = timeline(item)
 
         # Prefer informative detail line while remaining extensible.

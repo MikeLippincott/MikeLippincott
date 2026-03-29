@@ -1,6 +1,7 @@
 #!/bin/bash
-
-rm ../Michael_J_Lippincott_CV_*.pdf
+if [ -f "../Michael_J_Lippincott_CV_*.pdf" ]; then
+  rm ../Michael_J_Lippincott_CV_*.pdf
+fi
 
 # generate the tex file from toml file
 python build_tex_cv.py --input "cv_profile.toml" --output "cv.tex"

@@ -11,7 +11,6 @@ source_format = "latex"
 [person]
 full_name = "Michael J. Lippincott"
 email = "1michaell2017@gmail.com"
-phone = "+1-(636)-300-7577"
 website = "http://www.mikelippincott.github.io"
 
 [education]
@@ -290,7 +289,7 @@ location = "Saint Louis, MO"
 role = "Mentor - High School Student"
 institution = "University of Colorado Anschutz Medical Campus"
 location = "Aurora, CO"
-start = "Jan 2025"
+start = "Jan 2026"
 end = "Present"
 
 [[teaching_mentoring.items]]
@@ -364,10 +363,8 @@ order = 10
 authors = "Dave Bunten, Jenna Tomkinson, Erik Serrano, Michael J. Lippincott, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way"
 year = 2025
 title = "Scalable data harmonization for single-cell image-based profiling with CytoTable"
-status = "In Review"
 venue = "Patterns"
-preprint = "bioRxiv"
-doi = "https://doi.org/10.1101/2025.06.19.660613"
+doi = "https://doi.org/10.1016/j.patter.2026.101514"
 
 [[publications.items]]
 order = 11

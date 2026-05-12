@@ -183,13 +183,11 @@ def render_heading(person: dict) -> list[str]:
     name = escape_latex(person.get("full_name", ""))
     website = person.get("website", "")
     email = person.get("email", "")
-    phone = person.get("phone", "")
-
     lines = [
         "%----------HEADING-----------------",
         r"\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}",
         f"  \\textbf{{\\href{{{website}}}{{\\Large {name}}}}} & Email : \\href{{mailto:{email}}}{{{escape_latex(email)}}}\\\\",
-        f"  \\href{{{website}}}{{{escape_latex(website)}}} & Mobile : {escape_latex(phone)} \\\\",
+        f"  \\href{{{website}}}{{{escape_latex(website)}}} \\\\",
         r"\end{tabular*}",
         "",
     ]

@@ -149,6 +149,27 @@ end = "2019"
 
 [presentations]
 # Use [[presentations.items]] for invited talks, oral presentations, and posters
+[[presentations.items]]
+type = "Oral presentation"
+date = "6/30/2026"
+event = "Children's Tumor Foundation - NF Research Conference"
+location = "Denver, CO"
+title = "Evaluating Cell Painting and image-based profiling strategies for NF1 patient-derived 3D organoids"
+
+[[presentations.items]]
+type = "Oral presentation"
+date = "June 22, 2026"
+event = "Cold Spring Harbor Laboratory - Cell modeling in space and time"
+location = "Cold Spring Harbor, NY"
+title = "High-content live-cell time-lapse imaging for profiling cell death"
+
+[[presentations.items]]
+type = "Poster presentation"
+date = "May 20, 2026"
+event = "Society for Laboratory Automation and Screening (SLAS) Europe"
+location = "Vienna, Austria"
+title = "3D image-based profiling of patient-derived organoid drug screening"
+
 
 [[presentations.items]]
 type = "Invited speaker"

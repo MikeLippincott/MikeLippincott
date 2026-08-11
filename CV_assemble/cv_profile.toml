@@ -85,18 +85,18 @@ end = "2019"
 # Use [[scientific_appointments.items]] for committee/service/appointment roles
 
 [[scientific_appointments.items]]
-title = "Wellbeing and engagement committee, Department of Biomedical Informatics"
-institution = "University of Colorado Anschutz Medical Campus"
-location = "Aurora, CO"
-start = "2024"
-end = "Present"
-
-[[scientific_appointments.items]]
 title = "PhD student"
 institution = "University of Colorado Anschutz Medical Campus"
 location = "Aurora, CO"
 start = "Aug. 2022"
 end = "Present"
+
+[[scientific_appointments.items]]
+title = "Wellbeing and engagement committee, Department of Biomedical Informatics"
+institution = "University of Colorado Anschutz Medical Campus"
+location = "Aurora, CO"
+start = "Jul. 2024"
+end = "Jul. 2026"
 
 [[scientific_appointments.items]]
 title = "Journal Club Committee, Cell Biology, Stem Cells, and Development"
@@ -369,8 +369,16 @@ core_skills = ["Machine Learning", "Deep Learning", "Statistical Analysis", "Dat
 [publications]
 google_scholar = "https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en"
 
+
 [[publications.items]]
-order = 9
+order = 10
+authors = "Michael J. Lippincott, Alberto Mendoza-Valderrey, Jenna Tomkinson, Dave Bunten, Sara Gosline, Alice Soragni, Gregory P. Way."
+year = 2026
+title = "Three-dimensional image-based profiling of NF1 patient-derived organoids uncovers heterogeneous drug response landscapes"
+status = "In Preparation"
+
+[[publications.items]]
+order = 11
 authors = "Michael J. Lippincott, Jenna Tomkinson, Ibrahim Bilem, Mahomi Suzuki, Akiko Nakde, Toshiaki Endou, Simon Mathien, Felix Lavoie-Perusse, Carla Basualto-Alarcón, Gregory P Way"
 year = 2025
 title = "High-content live-cell time-lapse imaging predicts cells about to die via apoptosis"
@@ -380,7 +388,7 @@ preprint = "bioRxiv"
 doi = "https://doi.org/10.1101/2025.10.23.684203"
 
 [[publications.items]]
-order = 10
+order = 12
 authors = "Dave Bunten, Jenna Tomkinson, Erik Serrano, Michael J. Lippincott, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way"
 year = 2025
 title = "Scalable data harmonization for single-cell image-based profiling with CytoTable"
@@ -388,7 +396,7 @@ venue = "Patterns"
 doi = "https://doi.org/10.1016/j.patter.2026.101514"
 
 [[publications.items]]
-order = 11
+order = 13
 authors = "Erik Serrano, John Peters, Jesko Wagner, Rebecca E. Graham, Zhenghao Chen, Brian Feng, Gisele Miranda, Alexandr A. Kalinin, Loan Vulliard, Jenna Tomkinson, Cameron Mattson, Michael J. Lippincott, Ziqi Kang, Divya Sitani, Dave Bunten, Srijit Seal, Neil O. Carragher, Anne E. Carpenter, Shantanu Singh, Paula A. Marin Zapata, Juan C. Caicedo, Gregory P. Way"
 year = 2025
 title = "Progress and new challenges in image-based profiling"
@@ -396,7 +404,7 @@ venue = "Molecular Systems Biology"
 doi = "https://doi.org/10.1038/s44320-026-00197-7"
 
 [[publications.items]]
-order = 12
+order = 14
 authors = "Abigail Mumme-Monheit, Grace E. Gustafson, Colette A. Hopkins, Raisa Bailon-Zambrano, Juliana Sucharov, Michael J. Lippincott, Gregory P. Way, Kathryn L. Colborn, James T. Nichols"
 year = 2025
 title = "A quadratic paradigm describes the relationship between phenotype severity and variation"
@@ -404,7 +412,7 @@ venue = "Nature Communications"
 doi = "https://doi.org/10.1038/s41467-025-63316-2"
 
 [[publications.items]]
-order = 13
+order = 15
 authors = "Michael J. Lippincott, Jenna Tomkinson, Dave Bunten, Milad Mohammadi, Johanna Kastl, Johannes Knop, Ralf Schwandner, Jiamin Huang, Grant Ongo, Nathaniel Robichaud, Milad Dagher, Masafumi Tsuboi, Carla Basualto-Alarcón, Gregory P. Way"
 year = 2025
 title = "A morphology and secretome map of pyroptosis"
@@ -412,7 +420,7 @@ venue = "MBoC"
 doi = "https://doi.org/10.1091/mbc.E25-03-0119"
 
 [[publications.items]]
-order = 14
+order = 16
 authors = "Srivastava H, Michael J. Lippincott, Currie J, Canfield R, Lam MPY, Lau E"
 year = 2022
 title = "Protein prediction models support widespread post-transcriptional regulation of protein abundance by interacting partners"
@@ -420,7 +428,7 @@ venue = "PLOS Computational Biology"
 doi = "https://doi.org/10.1371/journal.pcbi.1010702"
 
 [[publications.items]]
-order = 15
+order = 17
 authors = "Lister-Shimauchi EH, McCarthy B, Michael J. Lippincott, Ahmed S"
 year = 2022
 title = "Genetic and Epigenetic Inheritance at Telomeres"

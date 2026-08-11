@@ -379,6 +379,8 @@ def render_publications(publications: dict) -> list[str]:
         tail_bits = []
         if status and venue:
             tail_bits.append(f"{status} at {venue}")
+        elif status and not venue:
+            tail_bits.append(status)
         elif venue:
             tail_bits.append(venue)
         if preprint:

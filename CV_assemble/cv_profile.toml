@@ -12,6 +12,8 @@ source_format = "latex"
 full_name = "Michael J. Lippincott"
 email = "1michaell2017@gmail.com"
 website = "http://www.mikelippincott.github.io"
+location = "Aurora, CO"
+tagline = "PhD Candidate, Computational Cell Biology --- University of Colorado Anschutz Medical Campus"
 
 [education]
 # Use [[education.items]] for each degree entry
@@ -358,13 +360,31 @@ role = "Ad hoc Reviewer"
 start = "2023"
 end = "Present"
 
+[software_contributions]
+[[software_contributions.items]]
+name = "ZedProfiler"
+description = "CPU-first 3D image feature extraction toolkit for high-content and high-throughput image-based profiling."
+year = "2026"
+url = "https://github.com/WayScience/ZedProfiler"
+role = "lead"
+
+[[software_contributions.items]]
+name = "CytoTable"
+description = "A tool for scalable data harmonization for single-cell image-based profiling"
+year = "2025"
+url = "https://github.com/cytotable/cytotable"
+role = "support"
+
+
 [skills]
 languages = ["Python", "R", "SQL", "Bash", "Nextflow"]
-technologies = ["HPC Orchestration (SLURM)", "Nextflow", "Cloud (AWS, GCP)", "terraform", "Docker", "Git"]
+distributed_compute = ["HPC Orchestration (SLURM)", "Nextflow", "Cloud (AWS, GCP)", "terraform"]
+technologies = ["Singularity/Apptainer", "Docker", "Git"]
 frameworks = ["Pytorch", "Scikit-learn", "Pandas", "NumPy", "SciPy", "Optuna", "Seaborn"]
 visualization = ["Matplotlib", "Seaborn", "ggoplot2", "Plotly", "dash"]
 image_software = ["CellProfiler", "napari", "Fiji/ImageJ"]
-core_skills = ["Machine Learning", "Deep Learning", "Statistical Analysis", "Data Visualization", "Data Wrangling", "Data Mining", "database Management"]
+core_skills = ["Database Management","Statistical Analysis", "Data Visualization", "Data Wrangling", "Data Mining"]
+Artificial_Intelligence = ["Computer Vision", "ViTs", "Graph-based Learning", "Agentic AI"]
 
 [publications]
 google_scholar = "https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en"
@@ -372,7 +392,7 @@ google_scholar = "https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en"
 
 [[publications.items]]
 order = 10
-authors = "Michael J. Lippincott, Alberto Mendoza-Valderrey, Jenna Tomkinson, Dave Bunten, Sara Gosline, Alice Soragni, Gregory P. Way."
+authors = "Michael J. Lippincott, Alberto Mendoza-Valderrey, Jenna Tomkinson, Dave Bunten, Sara Gosline, Alice Soragni, Gregory P. Way"
 year = 2026
 title = "Three-dimensional image-based profiling of NF1 patient-derived organoids uncovers heterogeneous drug response landscapes"
 status = "In Preparation"

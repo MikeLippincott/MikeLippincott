@@ -5,99 +5,115 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[10.5pt,letterpaper]{article}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage{microtype}
+\usepackage[margin=0.7in,top=0.55in,bottom=0.55in]{geometry}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
-\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
 
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\definecolor{accent}{HTML}{0E3A53}
+\definecolor{muted}{HTML}{5B6472}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-\setlength{\footskip}{6pt}
-
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-
+\pagestyle{empty}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-2pt}\scshape\raggedright\Large
-}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+\titleformat{\section}
+  {\normalfont\sffamily\bfseries\color{accent}\large}
+  {}{0em}{\Needspace{3\baselineskip}}
+  [{\color{accent}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-10pt}}
+    \textbf{#1}{: #2}
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-0pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-10pt}
+\newcommand{\subheadingskip}{3pt}
+\newcommand{\rightcolwidth}{1.3in}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{\subheadingskip}\item[]
+  \noindent\begin{minipage}[t]{\dimexpr\textwidth-\rightcolwidth-6pt\relax}
+    \raggedright\textbf{#1}\\
+    \textit{\small\color{muted}#3}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{\rightcolwidth}
+    \raggedleft\textcolor{accent}{\small #2}\\
+    \textit{\small\color{muted}#4}
+  \end{minipage}
 }
-\newcommand{\resumeReviewerItem}[2]{
-  \vspace{-0pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-    \end{tabular*}\vspace{-15pt}
+\newcommand{\resumeSubheadingCompact}[3]{%
+  \vspace{3pt}\item[]
+  \begin{tabularx}{\textwidth}{@{}Y r@{}}
+    \textbf{#1} & \textcolor{accent}{\small #2} \\
+    \multicolumn{2}{@{}l@{}}{\parbox{\textwidth}{\raggedright\itshape\small\color{muted}#3}} \\
+  \end{tabularx}
 }
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
+\newcommand{\resumeReviewerItem}[2]{%
+  \item[]
+  \begin{tabularx}{\textwidth}{@{}Y r@{}}
+    \textbf{#1} & \textcolor{accent}{\small #2} \\
+  \end{tabularx}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+\newcommand{\columnheading}[1]{{\sffamily\bfseries\color{accent} #1}\\[3pt]}
 
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt,label={},itemsep=2pt,topsep=2pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=14pt,itemsep=1pt,topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 \newcommand{\resumePubListStart}{\begin{itemize}}
-\newcommand{\resumePubListEnd}{\end{itemize}\vspace{-10pt}}
-\newcommand{\resumeSubPubItem}[1]{\item #1 \vspace{-10pt}}
+\newcommand{\resumePubListEnd}{\end{itemize}}
+\newcommand{\resumeSubPubItem}[1]{\item #1}
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\renewcommand{\labelitemi}{--}
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://www.mikelippincott.github.io}{\Large Michael J. Lippincott}} & Email : \href{mailto:1michaell2017@gmail.com}{1michaell2017@gmail.com}\\
-  \href{http://www.mikelippincott.github.io}{http://www.mikelippincott.github.io} \\
-\end{tabular*}
+\begin{center}
+  {\sffamily\bfseries\Huge\color{accent} Michael J. Lippincott}\\[3pt]
+  {\normalfont\itshape\color{muted} PhD Candidate, Computational Cell Biology --- University of Colorado Anschutz Medical Campus}\\[6pt]
+  {\small
+    \faIcon{map-marker-alt}\ Aurora, CO
+    \quad\textcolor{muted}{|}\quad
+    \faIcon{envelope}\ \href{mailto:1michaell2017@gmail.com}{1michaell2017@gmail.com}
+    \quad\textcolor{muted}{|}\quad
+    \faIcon{globe}\ \href{http://www.mikelippincott.github.io}{www.mikelippincott.github.io}
+  }
+\end{center}
+\vspace{-4pt}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {PhD}{Aug. 2022 - May. 2027}
-      {University of Colorado Anschutz Medical Campus, Computational Cell Biology}{Aurora, CO}
+      {PhD - Computational Cell Biology}{Aug. 2022 - May. 2027}
+      {University of Colorado Anschutz Medical Campus}{Aurora, CO}
     \resumeSubheading
-      {BS}{Aug. 2017 - May. 2021}
-      {Maryville University of Saint Louis, Biochemistry and Data Science}{Saint Louis, MO}
+      {BS - Biochemistry and Data Science}{Aug. 2017 - May. 2021}
+      {Maryville University of Saint Louis}{Saint Louis, MO}
   \resumeSubHeadingListEnd
 
 %-----------RESEARCH EXPERIENCE-----------------
@@ -155,62 +171,25 @@
       {Maryville University of Saint Louis}{Saint Louis, MO}
   \resumeSubHeadingListEnd
 
-%-----------PRESENTATIONS AND INVITED LECTURES-----------------
-\section{Presentations and Invited Lectures}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Oral presentation}{6/30/2026}
-      {Children's Tumor Foundation - NF Research Conference}{Denver, CO}
-    \resumeSubheading
-      {Oral presentation}{June 22, 2026}
-      {Cold Spring Harbor Laboratory - Cell modeling in space and time}{Cold Spring Harbor, NY}
-    \resumeSubheading
-      {Poster presentation}{May 20, 2026}
-      {Society for Laboratory Automation and Screening (SLAS) Europe}{Vienna, Austria}
-    \resumeSubheading
-      {Invited speaker}{Jan. 28, 2026}
-      {Michael Johnson Seminar Series, Maryville University}{Saint Louis, MO}
-    \resumeSubheading
-      {Oral presentation}{Dec. 4, 2025}
-      {Neurofibramatosis Young Investigator's Forum}{Baltimore, MD}
-    \resumeSubheading
-      {Oral presentation}{Oct. 27, 2025}
-      {Society of Biomolecular Imaging and Informatics}{Boston, MA}
-    \resumeSubheading
-      {Poster presentation}{Oct. 26, 2025}
-      {Society of Biomolecular Imaging and Informatics}{Boston, MA}
-    \resumeSubheading
-      {Oral presentation}{Oct. 24, 2025}
-      {Cell Biology, Stem Cells, and Development Retreat}{Estes Park, CO}
-    \resumeSubheading
-      {Poster presentation}{Feb. 10, 2025}
-      {Systems applications for cancer biology}{Aurora, CO}
-    \resumeSubheading
-      {Oral presentation}{Dec. 3, 2024}
-      {American Society for Cell Biology Cell Bio conference}{San Diego, CA}
-    \resumeSubheading
-      {Poster presentation}{Oct. 18, 2024}
-      {Cell Biology, Stem Cells, and Development Retreat}{Breckinridge, CO}
-    \resumeSubheading
-      {Poster presentation}{Aug. 27, 2024}
-      {Center for Health Artificial Intelligence Retreat}{Denver, CO}
-    \resumeSubheading
-      {Oral presentation}{Jul. 18, 2024}
-      {Computational Systems for Integrative Genomics}{New York, NY}
-    \resumeSubheading
-      {Poster presentation}{Dec. 3, 2023}
-      {American Society for Cell Biology Cell Bio conference}{Boston, MA}
-    \resumeSubheading
-      {Oral presentation}{Aug. 19, 2023}
-      {Center for Health Artificial Intelligence Retreat}{Aurora, CO}
-    \resumeSubheading
-      {Poster presentation}{Oct. 13, 2023}
-      {Cell Biology, Stem Cells, and Development Retreat}{Breckinridge, CO}
-  \resumeSubHeadingListEnd
+%-----------Publications-----------------
+\section{Publications}
+  {\small\color{muted} Google Scholar page (with citation metrics): \href{https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en}{https://scholar.google.com/citations?user=mTdpDrwAAAAJ\&hl=en}}\\[4pt]
+    \begin{enumerate}[label=\arabic*.,leftmargin=1.6em,itemsep=5pt,topsep=3pt]
+    \item {\textbf{Michael J. Lippincott}, Alberto Mendoza-Valderrey, Jenna Tomkinson, Dave Bunten, Sara Gosline, Alice Soragni, Gregory P. Way. (2026) Three-dimensional image-based profiling of NF1 patient-derived organoids uncovers heterogeneous drug response landscapes. In Preparation }
+    \item {\textbf{Michael J. Lippincott}, Jenna Tomkinson, Ibrahim Bilem, Mahomi Suzuki, Akiko Nakde, Toshiaki Endou, Simon Mathien, Felix Lavoie-Perusse, Carla Basualto-Alarcón, Gregory P Way. (2025) High-content live-cell time-lapse imaging predicts cells about to die via apoptosis. In Review at Cell Reports Methods. bioRxiv. https://doi.org/10.1101/2025.10.23.684203 }
+    \item {Dave Bunten, Jenna Tomkinson, Erik Serrano, \textbf{Michael J. Lippincott}, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way. (2025) Scalable data harmonization for single-cell image-based profiling with CytoTable. Patterns. https://doi.org/10.1016/j.patter.2026.101514 }
+    \item {Erik Serrano, John Peters, Jesko Wagner, Rebecca E. Graham, Zhenghao Chen, Brian Feng, Gisele Miranda, Alexandr A. Kalinin, Loan Vulliard, Jenna Tomkinson, Cameron Mattson, \textbf{Michael J. Lippincott}, Ziqi Kang, Divya Sitani, Dave Bunten, Srijit Seal, Neil O. Carragher, Anne E. Carpenter, Shantanu Singh, Paula A. Marin Zapata, Juan C. Caicedo, Gregory P. Way. (2025) Progress and new challenges in image-based profiling. Molecular Systems Biology. https://doi.org/10.1038/s44320-026-00197-7 }
+    \item {Abigail Mumme-Monheit, Grace E. Gustafson, Colette A. Hopkins, Raisa Bailon-Zambrano, Juliana Sucharov, \textbf{Michael J. Lippincott}, Gregory P. Way, Kathryn L. Colborn, James T. Nichols. (2025) A quadratic paradigm describes the relationship between phenotype severity and variation. Nature Communications. https://doi.org/10.1038/s41467-025-63316-2 }
+    \item {\textbf{Michael J. Lippincott}, Jenna Tomkinson, Dave Bunten, Milad Mohammadi, Johanna Kastl, Johannes Knop, Ralf Schwandner, Jiamin Huang, Grant Ongo, Nathaniel Robichaud, Milad Dagher, Masafumi Tsuboi, Carla Basualto-Alarcón, Gregory P. Way. (2025) A morphology and secretome map of pyroptosis. MBoC. https://doi.org/10.1091/mbc.E25-03-0119 }
+    \item {Srivastava H, \textbf{Michael J. Lippincott}, Currie J, Canfield R, Lam MPY, Lau E. (2022) Protein prediction models support widespread post-transcriptional regulation of protein abundance by interacting partners. PLOS Computational Biology. https://doi.org/10.1371/journal.pcbi.1010702 }
+    \item {Lister-Shimauchi EH, McCarthy B, \textbf{Michael J. Lippincott}, Ahmed S. (2022) Genetic and Epigenetic Inheritance at Telomeres. Epigenomes. https://doi.org/10.3390/epigenomes6010009 }
+
+    \end{enumerate}
 
 %-----------HONORS AND AWARDS-----------------
 \section{Honors and Awards}
-  \resumeSubHeadingListStart
+  {\renewcommand{\subheadingskip}{2pt}
+  \begin{itemize}[leftmargin=0pt,label={},itemsep=0pt,topsep=2pt,parsep=0pt]
     \resumeSubheading
       {Neurofibromatosis Young Investigator's Forum Travel Award}{2025}
       {Neurofibromatosis Young Investigator's Forum}{Baltimore, MD}
@@ -229,11 +208,88 @@
     \resumeSubheading
       {Outstanding Junior Chemistry Student}{2019}
       {American Chemical Society}{Saint Louis, MO}
+  \end{itemize}}
+
+%-----------SOFTWARE CONTRIBUTIONS-----------------
+\section{Software Contributions}
+  \resumeSubHeadingListStart
+    \resumeSubheadingCompact
+      {ZedProfiler}{2026}
+      {Lead. CPU-first 3D image feature extraction toolkit for high-content and high-throughput image-based profiling. \href{https://github.com/WayScience/ZedProfiler}{https://github.com/WayScience/ZedProfiler}}
+    \resumeSubheadingCompact
+      {CytoTable}{2025}
+      {Support. A tool for scalable data harmonization for single-cell image-based profiling. \href{https://github.com/cytotable/cytotable}{https://github.com/cytotable/cytotable}}
   \resumeSubHeadingListEnd
+
+%-----------PRESENTATIONS AND INVITED LECTURES-----------------
+\Needspace{4in}
+\section{Presentations and Invited Lectures}
+\noindent\begin{minipage}[t]{0.485\textwidth}
+  \columnheading{Talks}
+  {\renewcommand{\subheadingskip}{1pt}
+  \begin{itemize}[leftmargin=0pt,label={},itemsep=0pt,topsep=2pt,parsep=0pt]
+    \resumeSubheading
+      {Children's Tumor Foundation - NF Research Conference}{6/30/2026}
+      {}{Denver, CO}
+    \resumeSubheading
+      {Cold Spring Harbor Laboratory - Cell modeling in space and time}{June 22, 2026}
+      {}{Cold Spring Harbor, NY}
+    \resumeSubheading
+      {Michael Johnson Seminar Series}{Jan. 28, 2026}
+      {Maryville University}{Saint Louis, MO}
+    \resumeSubheading
+      {Neurofibramatosis Young Investigator's Forum}{Dec. 4, 2025}
+      {}{Baltimore, MD}
+    \resumeSubheading
+      {Society of Biomolecular Imaging and Informatics}{Oct. 27, 2025}
+      {}{Boston, MA}
+    \resumeSubheading
+      {Cell Biology, Stem Cells, and Development Retreat}{Oct. 24, 2025}
+      {}{Estes Park, CO}
+    \resumeSubheading
+      {American Society for Cell Biology Cell Bio conference}{Dec. 3, 2024}
+      {}{San Diego, CA}
+    \resumeSubheading
+      {Computational Systems for Integrative Genomics}{Jul. 18, 2024}
+      {}{New York, NY}
+    \resumeSubheading
+      {Center for Health Artificial Intelligence Retreat}{Aug. 19, 2023}
+      {}{Aurora, CO}
+  \end{itemize}}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+  \columnheading{Posters}
+  {\renewcommand{\subheadingskip}{1pt}
+  \begin{itemize}[leftmargin=0pt,label={},itemsep=0pt,topsep=2pt,parsep=0pt]
+    \resumeSubheading
+      {Society for Laboratory Automation and Screening (SLAS) Europe}{May 20, 2026}
+      {}{Vienna, Austria}
+    \resumeSubheading
+      {Society of Biomolecular Imaging and Informatics}{Oct. 26, 2025}
+      {}{Boston, MA}
+    \resumeSubheading
+      {Systems applications for cancer biology}{Feb. 10, 2025}
+      {}{Aurora, CO}
+    \resumeSubheading
+      {Cell Biology, Stem Cells, and Development Retreat}{Oct. 18, 2024}
+      {}{Breckinridge, CO}
+    \resumeSubheading
+      {Center for Health Artificial Intelligence Retreat}{Aug. 27, 2024}
+      {}{Denver, CO}
+    \resumeSubheading
+      {American Society for Cell Biology Cell Bio conference}{Dec. 3, 2023}
+      {}{Boston, MA}
+    \resumeSubheading
+      {Cell Biology, Stem Cells, and Development Retreat}{Oct. 13, 2023}
+      {}{Breckinridge, CO}
+  \end{itemize}}
+\end{minipage}
 
 %-----------TEACHING AND MENTORING-----------------
 \section{Teaching and Mentoring}
-  \resumeSubHeadingListStart
+  {\renewcommand{\subheadingskip}{2pt}
+  \begin{itemize}[leftmargin=0pt,label={},itemsep=0pt,topsep=2pt,parsep=0pt]
     \resumeSubheading
       {Mentor - High School Student}{Jan 2026 - Present}
       {University of Colorado Anschutz Medical Campus}{Aurora, CO}
@@ -246,16 +302,16 @@
     \resumeSubheading
       {Guest Lecturer - CPBS 7601 Reproducible Computational methods course}{Nov. 15, 2024}
       {University of Colorado Anschutz Medical Campus}{Aurora, CO}
-  \resumeSubHeadingListEnd
+  \end{itemize}}
 
 %-----------Journal Reviewer-----------------
 \section{Journal Reviewer}
-  \resumeSubHeadingListStart
+  \begin{itemize}[leftmargin=0pt,label={},itemsep=0pt,topsep=2pt,parsep=0pt]
     \resumeReviewerItem{Ad hoc Reviewer - Review Commons}{2025 - Present}
     \resumeReviewerItem{Ad hoc Reviewer - Cell}{2024 - Present}
     \resumeReviewerItem{Ad hoc Reviewer - Molecular Biology of the Cell}{2024 - Present}
     \resumeReviewerItem{Ad hoc Reviewer - BiorXiv}{2023 - Present}
-  \resumeSubHeadingListEnd
+  \end{itemize}
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
@@ -264,7 +320,10 @@
      \textbf{Languages}{: Python, R, SQL, Bash, Nextflow}
     }
    \item{
-     \textbf{Technologies}{: HPC Orchestration (SLURM), Nextflow, Cloud (AWS, GCP), terraform, Docker, Git}
+     \textbf{Distributed Compute}{: HPC Orchestration (SLURM), Nextflow, Cloud (AWS, GCP), terraform}
+    }
+   \item{
+     \textbf{Technologies}{: Singularity/Apptainer, Docker, Git}
     }
    \item{
      \textbf{Frameworks}{: Pytorch, Scikit-learn, Pandas, NumPy, SciPy, Optuna, Seaborn}
@@ -276,25 +335,12 @@
      \textbf{Image Software}{: CellProfiler, napari, Fiji/ImageJ}
     }
    \item{
-     \textbf{Core Skills}{: Machine Learning, Deep Learning, Statistical Analysis, Data Visualization, Data Wrangling, Data Mining, database Management}
+     \textbf{Core Skills}{: Database Management, Statistical Analysis, Data Visualization, Data Wrangling, Data Mining}
+    }
+   \item{
+     \textbf{Artificial Intelligence}{: Computer Vision, ViTs, Graph-based Learning, Agentic AI}
     }
  \resumeSubHeadingListEnd
-
-%-----------Publications-----------------
-\section{Publications}
-  Google Scholar page (with citation metrics):
-    \href{https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en}{https://scholar.google.com/citations?user=mTdpDrwAAAAJ\&hl=en}
-    \begin{enumerate}[label=\arabic*, start=10, before=\let\originalitem\item\renewcommand{\item}{\addtocounter{enumi}{-2}\originalitem}]
-    \item {\textbf{Michael J. Lippincott}, Alberto Mendoza-Valderrey, Jenna Tomkinson, Dave Bunten, Sara Gosline, Alice Soragni, Gregory P. Way.. (2026) Three-dimensional image-based profiling of NF1 patient-derived organoids uncovers heterogeneous drug response landscapes. In Preparation }
-    \item {\textbf{Michael J. Lippincott}, Jenna Tomkinson, Ibrahim Bilem, Mahomi Suzuki, Akiko Nakde, Toshiaki Endou, Simon Mathien, Felix Lavoie-Perusse, Carla Basualto-Alarcón, Gregory P Way. (2025) High-content live-cell time-lapse imaging predicts cells about to die via apoptosis. In Review at Cell Reports Methods. bioRxiv. https://doi.org/10.1101/2025.10.23.684203 }
-    \item {Dave Bunten, Jenna Tomkinson, Erik Serrano, \textbf{Michael J. Lippincott}, Kenneth I. Brewer, Vince Rubinetti, Faisal Alquaddoomi, Gregory P. Way. (2025) Scalable data harmonization for single-cell image-based profiling with CytoTable. Patterns. https://doi.org/10.1016/j.patter.2026.101514 }
-    \item {Erik Serrano, John Peters, Jesko Wagner, Rebecca E. Graham, Zhenghao Chen, Brian Feng, Gisele Miranda, Alexandr A. Kalinin, Loan Vulliard, Jenna Tomkinson, Cameron Mattson, \textbf{Michael J. Lippincott}, Ziqi Kang, Divya Sitani, Dave Bunten, Srijit Seal, Neil O. Carragher, Anne E. Carpenter, Shantanu Singh, Paula A. Marin Zapata, Juan C. Caicedo, Gregory P. Way. (2025) Progress and new challenges in image-based profiling. Molecular Systems Biology. https://doi.org/10.1038/s44320-026-00197-7 }
-    \item {Abigail Mumme-Monheit, Grace E. Gustafson, Colette A. Hopkins, Raisa Bailon-Zambrano, Juliana Sucharov, \textbf{Michael J. Lippincott}, Gregory P. Way, Kathryn L. Colborn, James T. Nichols. (2025) A quadratic paradigm describes the relationship between phenotype severity and variation. Nature Communications. https://doi.org/10.1038/s41467-025-63316-2 }
-    \item {\textbf{Michael J. Lippincott}, Jenna Tomkinson, Dave Bunten, Milad Mohammadi, Johanna Kastl, Johannes Knop, Ralf Schwandner, Jiamin Huang, Grant Ongo, Nathaniel Robichaud, Milad Dagher, Masafumi Tsuboi, Carla Basualto-Alarcón, Gregory P. Way. (2025) A morphology and secretome map of pyroptosis. MBoC. https://doi.org/10.1091/mbc.E25-03-0119 }
-    \item {Srivastava H, \textbf{Michael J. Lippincott}, Currie J, Canfield R, Lam MPY, Lau E. (2022) Protein prediction models support widespread post-transcriptional regulation of protein abundance by interacting partners. PLOS Computational Biology. https://doi.org/10.1371/journal.pcbi.1010702 }
-    \item {Lister-Shimauchi EH, McCarthy B, \textbf{Michael J. Lippincott}, Ahmed S. (2022) Genetic and Epigenetic Inheritance at Telomeres. Epigenomes. https://doi.org/10.3390/epigenomes6010009 }
-
-    \end{enumerate}
 
 %-------------------------------------------
 \end{document}

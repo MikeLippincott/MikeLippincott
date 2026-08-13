@@ -98,6 +98,7 @@ LATEX_PREAMBLE = r"""%-------------------------
 \newcommand{\rightcolwidth}{1.3in}
 \newcommand{\resumeSubheading}[4]{%
   \vspace{\subheadingskip}\item[]
+  \begingroup\rightskip0pt\parfillskip0pt
   \noindent\begin{minipage}[t]{\dimexpr\textwidth-\rightcolwidth-6pt\relax}
     \raggedright\textbf{#1}\\
     \textit{\small\color{muted}#3}
@@ -107,6 +108,7 @@ LATEX_PREAMBLE = r"""%-------------------------
     \raggedleft\textcolor{accent}{\small #2}\\
     \textit{\small\color{muted}#4}
   \end{minipage}
+  \par\endgroup
 }
 \newcommand{\resumeSubheadingCompact}[3]{%
   \vspace{3pt}\item[]
@@ -555,6 +557,10 @@ def build_latex(data: dict) -> str:
     lines: list[str] = [LATEX_PREAMBLE.rstrip(), ""]
     lines.extend(render_heading(data.get("person", {})))
 
+    # Sections that should sit closer to the section above them than the
+    # default \titlespacing "before" gap.
+    tighter_gap_before = {"teaching_mentoring", "journal_reviewer", "skills"}
+
     sections = SECTION_ORDER + discover_extra_sections(data)
     for key in sections:
         section_data = data.get(key)
@@ -562,23 +568,25 @@ def build_latex(data: dict) -> str:
             continue
 
         if key == "skills":
-            lines.extend(render_skills(section_data))
+            section_lines = render_skills(section_data)
         elif key == "journal_reviewer":
-            lines.extend(render_journal_reviewer(section_data))
+            section_lines = render_journal_reviewer(section_data)
         elif key == "publications":
-            lines.extend(render_publications(section_data))
+            section_lines = render_publications(section_data)
         elif key == "presentations":
-            lines.extend(render_presentations(section_data))
+            section_lines = render_presentations(section_data)
         elif key == "software_contributions":
-            lines.extend(render_software_contributions(section_data))
+            section_lines = render_software_contributions(section_data)
         else:
-            lines.extend(
-                render_generic_subheading_section(
-                    key,
-                    section_data,
-                    tight=key in {"honors_awards", "teaching_mentoring"},
-                )
+            section_lines = render_generic_subheading_section(
+                key,
+                section_data,
+                tight=key in {"honors_awards", "teaching_mentoring"},
             )
+
+        if section_lines and key in tighter_gap_before:
+            lines.append(r"\vspace{-16pt}")
+        lines.extend(section_lines)
 
     lines.extend(
         ["%-------------------------------------------", "\\end{document}", ""]

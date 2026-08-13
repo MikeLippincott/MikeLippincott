@@ -53,6 +53,7 @@
 \newcommand{\rightcolwidth}{1.3in}
 \newcommand{\resumeSubheading}[4]{%
   \vspace{\subheadingskip}\item[]
+  \begingroup\rightskip0pt\parfillskip0pt
   \noindent\begin{minipage}[t]{\dimexpr\textwidth-\rightcolwidth-6pt\relax}
     \raggedright\textbf{#1}\\
     \textit{\small\color{muted}#3}
@@ -62,6 +63,7 @@
     \raggedleft\textcolor{accent}{\small #2}\\
     \textit{\small\color{muted}#4}
   \end{minipage}
+  \par\endgroup
 }
 \newcommand{\resumeSubheadingCompact}[3]{%
   \vspace{3pt}\item[]
@@ -286,6 +288,7 @@
   \end{itemize}}
 \end{minipage}
 
+\vspace{-16pt}
 %-----------TEACHING AND MENTORING-----------------
 \section{Teaching and Mentoring}
   {\renewcommand{\subheadingskip}{2pt}
@@ -304,6 +307,7 @@
       {University of Colorado Anschutz Medical Campus}{Aurora, CO}
   \end{itemize}}
 
+\vspace{-16pt}
 %-----------Journal Reviewer-----------------
 \section{Journal Reviewer}
   \begin{itemize}[leftmargin=0pt,label={},itemsep=0pt,topsep=2pt,parsep=0pt]
@@ -313,6 +317,7 @@
     \resumeReviewerItem{Ad hoc Reviewer - BiorXiv}{2023 - Present}
   \end{itemize}
 
+\vspace{-16pt}
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
  \resumeSubHeadingListStart

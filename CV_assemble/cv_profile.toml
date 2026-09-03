@@ -59,7 +59,7 @@ start = "Aug. 2022"
 end = "Present"
 dissertation_title = "Developing Novel 3D and time lapse Microscopy Image-based Computational Methods for Profiling Dynamic Cellular Processes and Screening Therapeutic Compounds for Neurofibromatosis Type 1 (NF1)."
 bullets = [
-    "I innovated new high-dimensional microscopy image analysis techniques and frameworks for profiling dynamic cellular processes, and screening potential therapeutic compounds for NF1. My contributions include developing novel algorithms for 3D image segmentation of organoid models and feature extraction, developing time-lapse image-based profiling methods, and screening compounds that target cell death processes, and screening for therapeutic interventions in NF1."
+    "I innovated new high-dimensional microscopy image analysis techniques and frameworks for profiling dynamic cellular processes, and screening potential therapeutic compounds for NF1. My contributions include leading a computational team and collaborating with wet-bench teams to develop a high-content, high-thorughput 3D organoid screening framework. This involved developing novel algorithms for 3D image segmentation of organoid models and feature extraction, developing time-lapse image-based profiling methods, and screening compounds that target cell death processes, and screening for therapeutic interventions in NF1."
 ]
 
 [[research_experience.items]]
@@ -432,6 +432,7 @@ image_software = ["CellProfiler", "napari", "Fiji/ImageJ", "Cytomining ecosystem
 core_skills = ["Database Management","Statistical Analysis", "Data Visualization", "Data Wrangling", "Data Mining"]
 Artificial_Intelligence = ["Computer Vision", "ViTs", "Graph-based Learning", "Agentic AI", "Self-supervised Learning"]
 Platforms = ["Yokogawa microscopes", "Linux"]
+
 
 [publications]
 google_scholar = "https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en"

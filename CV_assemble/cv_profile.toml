@@ -15,6 +15,12 @@ website = "http://www.mikelippincott.github.io"
 location = "Aurora, CO"
 tagline = "PhD Candidate, Computational Cell Biology --- University of Colorado Anschutz Medical Campus"
 
+[Mission]
+description = "Innovate, collaborate, and contribute to the advancement of computational drug screening for Neurofibromatosis."
+
+# [Mission]
+# description = "Innovate, collaborate, and contribute to the advancement of computational biology."
+
 [education]
 # Use [[education.items]] for each degree entry
 
@@ -36,6 +42,13 @@ end = "May. 2021"
 
 [research_experience]
 # Use [[research_experience.items]] for each research role
+#
+# Optional `bullets` field per item: a list of accomplishment strings for
+# that position. Each bullet should start with an action verb and cover both
+# WHAT was done and WHY it mattered (impact/purpose), e.g.:
+#   "Developed X to accomplish Y, enabling Z."
+# Leave the list empty ("bullets = []") until content is written; empty
+# lists render nothing.
 
 [[research_experience.items]]
 role = "PhD Research - Computational Cell Biology"
@@ -44,6 +57,10 @@ advisor = "Gregory P. Way, PhD"
 location = "Aurora, CO"
 start = "Aug. 2022"
 end = "Present"
+dissertation_title = "Developing Novel 3D and time lapse Microscopy Image-based Computational Methods for Profiling Dynamic Cellular Processes and Screening Therapeutic Compounds for Neurofibromatosis Type 1 (NF1)."
+bullets = [
+    "I innovated new high-dimensional microscopy image analysis techniques and frameworks for profiling dynamic cellular processes, and screening potential therapeutic compounds for NF1. My contributions include developing novel algorithms for 3D image segmentation of organoid models and feature extraction, developing time-lapse image-based profiling methods, and screening compounds that target cell death processes, and screening for therapeutic interventions in NF1."
+]
 
 [[research_experience.items]]
 role = "Post-baccalaureate Research Assistant - Genomics"
@@ -52,6 +69,9 @@ advisor = "Shawn Ahmed"
 location = "Chapel Hill, NC"
 start = "2021"
 end = "2022"
+bullets = [
+    "I investigated the phenotypic transgenerational epigenetic inheritance patterns of telomere binding proteins in the context of aging. This work was performed by using high-content imaging, computational modeling, and genomic analysis of telomeric sequences."
+]
 
 [[research_experience.items]]
 role = "Research Assistant - Genome editing"
@@ -59,6 +79,9 @@ institution = "Centro de Technologia Canavieria"
 location = "Saint Louis, MO"
 start = "2020"
 end = "2021"
+bullets = [
+    "I genetically engineered sugar cane systems with CRISPR-Cas systems to improve crop yield, disease resistance, and overall plant health."
+]
 
 [[research_experience.items]]
 role = "Undergraduate Research Assistant - Quantitative spectroscopy"
@@ -67,6 +90,9 @@ advisor = "Thomas Spudich, PhD"
 location = "Saint Louis, MO"
 start = "2019"
 end = "2020"
+bullets = [
+    "I created, built, and engineered a solution cathode glow discharge atomic emission spectrometer for the analysis of trace elements in biological water samples."
+]
 
 [[research_experience.items]]
 role = "Undergraduate Research Assistant - Cell Biology"
@@ -75,6 +101,9 @@ advisor = "Stacy L. Donovan, PhD"
 location = "Saint Louis, MO"
 start = "2018"
 end = "2021"
+bullets = [
+    "I investigated the role of telomere lengthening health supplements, Astragaloside IV on cancer proliferation gene pathways."
+]
 
 [[research_experience.items]]
 role = "Research Internship - Biochemistry"
@@ -82,6 +111,9 @@ institution = "Elemental Enzymes"
 location = "Saint Louis, MO"
 start = "2018"
 end = "2019"
+bullets = [
+    "I developed and optimized biochemical assays for the analysis of enzyme activity and protein interactions for crop root and soil health."
+]
 
 [scientific_appointments]
 # Use [[scientific_appointments.items]] for committee/service/appointment roles
@@ -152,8 +184,15 @@ end = "2019"
 [presentations]
 # Use [[presentations.items]] for invited talks, oral presentations, and posters
 [[presentations.items]]
+type = "Poster presentation"
+date = "September. 2, 2026"
+event = "Gilbert Family Foundation NF1 Meeting"
+location = "Detroit, MI"
+title = "3D image-based profiling for NF1 patient-derived organoid drug screening"
+
+[[presentations.items]]
 type = "Oral presentation"
-date = "6/30/2026"
+date = "June 30, 2026"
 event = "Children's Tumor Foundation - NF Research Conference"
 location = "Denver, CO"
 title = "Evaluating Cell Painting and image-based profiling strategies for NF1 patient-derived 3D organoids"
@@ -366,14 +405,21 @@ name = "ZedProfiler"
 description = "CPU-first 3D image feature extraction toolkit for high-content and high-throughput image-based profiling."
 year = "2026"
 url = "https://github.com/WayScience/ZedProfiler"
-role = "lead"
+role = "Lead developer"
 
 [[software_contributions.items]]
 name = "CytoTable"
 description = "A tool for scalable data harmonization for single-cell image-based profiling"
 year = "2025"
 url = "https://github.com/cytotable/cytotable"
-role = "support"
+role = "Support developer"
+
+[[software_contributions.items]]
+name = "Cytomining ecosystem"
+description = "Cytomining is a software ecosystem that maintains essential tools, workflows, and best practices for single-cell image-based profiling and microscopy data analysis research. Open source software in this suite are: pycytominer, cytotable, coSMicQC, CytoDataFrame, copairs, DeepProfiler, buscar, ZedProfiler, ome-arrow, and iceberg-bioimage."
+year = "2025"
+url = "https://github.com/cytomining"
+role = "User/Contributor"
 
 
 [skills]
@@ -381,10 +427,11 @@ languages = ["Python", "R", "SQL", "Bash", "Nextflow"]
 distributed_compute = ["HPC Orchestration (SLURM)", "Nextflow", "Cloud (AWS, GCP)", "terraform"]
 technologies = ["Singularity/Apptainer", "Docker", "Git"]
 frameworks = ["Pytorch", "Scikit-learn", "Pandas", "NumPy", "SciPy", "Optuna", "Seaborn"]
-visualization = ["Matplotlib", "Seaborn", "ggoplot2", "Plotly", "dash"]
-image_software = ["CellProfiler", "napari", "Fiji/ImageJ"]
+visualization = ["Matplotlib", "Seaborn", "ggplot2", "Plotly", "dash"]
+image_software = ["CellProfiler", "napari", "Fiji/ImageJ", "Cytomining ecosystem"]
 core_skills = ["Database Management","Statistical Analysis", "Data Visualization", "Data Wrangling", "Data Mining"]
-Artificial_Intelligence = ["Computer Vision", "ViTs", "Graph-based Learning", "Agentic AI"]
+Artificial_Intelligence = ["Computer Vision", "ViTs", "Graph-based Learning", "Agentic AI", "Self-supervised Learning"]
+Platforms = ["Yokogawa microscopes", "Linux"]
 
 [publications]
 google_scholar = "https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en"

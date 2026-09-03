@@ -70,7 +70,7 @@ location = "Chapel Hill, NC"
 start = "2021"
 end = "2022"
 bullets = [
-    "I investigated the phenotypic transgenerational epigenetic inheritance patterns of telomere binding proteins in the context of aging. This work was performed by using high-content imaging, computational modeling, and genomic analysis of telomeric sequences from hundreds of genomes."
+    "I investigated the phenotypic transgenerational epigenetic inheritance patterns of telomere binding proteins in the context of aging. This was mechanistic work that aimed to understand the underlying biological processes associated with telomere maintenance and aging. This work was performed by using high-content imaging, computational modeling, and genomic analysis of telomeric sequences from hundreds of genomes."
 ]
 
 [[research_experience.items]]
@@ -80,7 +80,7 @@ location = "Saint Louis, MO"
 start = "2020"
 end = "2021"
 bullets = [
-    "I genetically engineered sugar cane systems with CRISPR-Cas systems to improve crop yield, disease resistance, and overall plant health."
+    "I genetically engineered sugar cane systems with CRISPR-Cas systems to improve crop yield, disease resistance, and overall plant health. The goal of this was to engineer new sugar-cane clones with enhanced traits."
 ]
 
 [[research_experience.items]]
@@ -91,7 +91,7 @@ location = "Saint Louis, MO"
 start = "2019"
 end = "2020"
 bullets = [
-    "I created, built, and engineered a solution cathode glow discharge atomic emission spectrometer for the analysis of trace elements in biological water samples."
+    "I created, built, and engineered a solution cathode glow discharge atomic emission spectrometer for the analysis of trace elements in biological water samples. The purpose of this work was to use a cost-effective and portable method for remote region water testing of heavy metals."
 ]
 
 [[research_experience.items]]
@@ -102,7 +102,7 @@ location = "Saint Louis, MO"
 start = "2018"
 end = "2021"
 bullets = [
-    "I investigated the role of telomere lengthening health supplements, Astragaloside IV on cancer proliferation gene pathways."
+    "I investigated the role of telomere lengthening health supplements, Astragaloside IV on cancer proliferation gene pathways. The goal of this project was to assess potential risks associated with using these non-FDA approved supplements."
 ]
 
 [[research_experience.items]]

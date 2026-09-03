@@ -47,3 +47,13 @@ repos:
         -   --autofix
         -   --indent=4
         -   --no-sort-keys
+
+  # build the CV
+-   repo: local
+    hooks:
+    -   id: just-all
+        name: just all
+        entry: just all
+        language: system
+        pass_filenames: false
+        always_run: true

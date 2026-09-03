@@ -191,13 +191,14 @@ def discover_extra_sections(data: dict) -> list[str]:
     return extras
 
 
-def render_heading(person: dict) -> list[str]:
+def render_heading(person: dict, mission: dict) -> list[str]:
     name = escape_latex(person.get("full_name", ""))
     website = person.get("website", "")
     website_display = escape_latex(website.split("://", 1)[-1].rstrip("/"))
     email = person.get("email", "")
     tagline = escape_latex(person.get("tagline", ""))
     location = escape_latex(person.get("location", ""))
+    mission_description = escape_latex(mission.get("description", ""))
 
     contact_bits = []
     if location:
@@ -220,7 +221,12 @@ def render_heading(person: dict) -> list[str]:
     if tagline:
         lines.append(f"  {{\\normalfont\\itshape\\color{{muted}} {tagline}}}\\\\[6pt]")
     if contact_line:
-        lines.extend(["  {\\small", f"    {contact_line}", "  }"])
+        contact_end = "  }\\\\[3pt]" if mission_description else "  }"
+        lines.extend(["  {\\small", f"    {contact_line}", contact_end])
+    if mission_description:
+        lines.append(
+            f"  {{\\normalfont\\small\\color{{muted}} \\textbf{{Mission:}} {mission_description}}}\\\\[3pt]"
+        )
     lines.extend([r"\end{center}", r"\vspace{-4pt}", ""])
     return lines
 
@@ -320,6 +326,7 @@ def render_subheading_items(
             "year",
             "location",
             "order",
+            "bullets",
         }
         extra_parts = [
             f"{k.replace('_', ' ').title()}: {item[k]}"
@@ -340,6 +347,13 @@ def render_subheading_items(
                 f"      {{{escape_latex(detail)}}}{{{escape_latex(location)}}}",
             ]
         )
+
+        bullets = [b for b in item.get("bullets") or [] if str(b).strip()]
+        if bullets:
+            lines.append("    \\resumeItemListStart")
+            for bullet in bullets:
+                lines.append(f"      \\item\\small{{{escape_latex(bullet)}}}")
+            lines.append("    \\resumeItemListEnd")
 
     return lines
 
@@ -555,7 +569,7 @@ def render_publications(publications: dict) -> list[str]:
 
 def build_latex(data: dict) -> str:
     lines: list[str] = [LATEX_PREAMBLE.rstrip(), ""]
-    lines.extend(render_heading(data.get("person", {})))
+    lines.extend(render_heading(data.get("person", {}), data.get("Mission", {})))
 
     # Sections that should sit closer to the section above them than the
     # default \titlespacing "before" gap.

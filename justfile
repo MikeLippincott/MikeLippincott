@@ -23,6 +23,11 @@ tex: venv
     {{venv_dir}}/bin/python {{cv_dir}}/build_tex_cv.py \
         --input {{cv_dir}}/cv_profile.toml --output {{cv_dir}}/cv.tex
 
+# Generate a single-page resume.tex from cv_profile.toml
+resume-tex: venv
+    {{venv_dir}}/bin/python {{cv_dir}}/build_tex_resume.py \
+        --input {{cv_dir}}/cv_profile.toml --output {{cv_dir}}/resume.tex
+
 # Compile cv.tex to a PDF (run twice for stable refs/links)
 pdf: tex
     cd {{cv_dir}} && pdflatex -interaction=nonstopmode cv.tex

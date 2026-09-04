@@ -431,8 +431,6 @@ visualization = ["Matplotlib", "Seaborn", "ggplot2", "Plotly", "dash"]
 image_software = ["CellProfiler", "napari", "Fiji/ImageJ", "Cytomining ecosystem"]
 core_skills = ["Database Management","Statistical Analysis", "Data Visualization", "Data Wrangling", "Data Mining"]
 Artificial_Intelligence = ["Computer Vision", "ViTs", "Graph-based Learning", "Agentic AI", "Self-supervised Learning"]
-Platforms = ["Yokogawa microscopes", "Linux"]
-
 
 [publications]
 google_scholar = "https://scholar.google.com/citations?user=mTdpDrwAAAAJ&hl=en"

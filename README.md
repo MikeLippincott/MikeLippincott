@@ -29,5 +29,6 @@
 
 <br/><br/>
 
-[Mikes's GitHub stats](https://github-readme-stats.vercel.app/api?username=MikeLippincott&show_icons=true&theme=radical)
-
+[Are you down bad? (quiz)](https://mikelippincott.github.io/down_bad/)
+<br/><br/>
+[Are you a nerd or something else? (quiz)](https://mikelippincott.github.io/nerd_axis/)
